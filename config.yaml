@@ -1,0 +1,125 @@
+# ============================================================================
+# Configuration for: Depth resolvability and network capability in the Fars Arc
+# Every parameter used anywhere in the analysis is declared here and nowhere
+# else. The source files contain no numerical constants of their own.
+# ============================================================================
+
+study_period:
+  # The primary analysis is restricted to years for which the ISC Bulletin has
+  # been reviewed. The ISC states in the export header that data on or after
+  # isc_review_cutoff have not been reviewed, so those years are not pooled
+  # with the reviewed period: the prime hypocenter in an unreviewed year is
+  # whichever agency reported it, not an ISC relocation.
+  #
+  # Everything after primary_last_year is analyzed separately by
+  # analysis.recent_era(). The split is applied to the event table once, before
+  # any statistic is taken; see
+  # tests/test_analysis.py::test_era_split_happens_before_statistics
+  primary_first_year: 2010
+  primary_last_year: 2023
+  isc_review_cutoff: "2024-08-01"
+  # The final year of the export is incomplete because the export was taken
+  # part-way through it. Recorded so that no share is read as a full year.
+  partial_final_year: 2026
+
+study_area:
+  # Bounding box of the ISC query, as downloaded
+  lat_min: 26.5
+  lat_max: 30.0
+  lon_min: 50.0
+  lon_max: 53.0
+
+  # Target box, used only for the sub-regional analysis
+  target:
+    name: "Darang Fault Zone"
+    lat_min: 27.50
+    lat_max: 29.10
+    lon_min: 50.50
+    lon_max: 52.10
+
+physics:
+  # Depth of the hypothesized detachment horizon being tested (km)
+  detachment_depth_km: 11.0
+  # Crustal and uppermost-mantle P velocities, used only to predict the Pn
+  # critical angle for comparison with the reported emergence angles
+  vp_crust_km_s: 6.0
+  vp_mantle_km_s: 8.0
+  earth_radius_km: 6371.0
+  km_per_degree: 111.195
+
+thresholds:
+  # Distance cutoffs at which the azimuthal gap is recomputed (km).
+  # null means every station, including teleseismic, which reproduces the
+  # value the Bulletin reports.
+  gap_distance_cutoffs_km: [50, 75, 100, 150, 200, 300, 400, 600, 1000, null]
+  # Cutoff defining a local network for this study
+  local_network_km: 200
+  # Limits used when classifying a solution as well constrained
+  max_gap_deg: 180
+  min_stations: 8
+  # Bins for the nearest-station and depth table
+  nearest_station_bins_km: [0, 50, 100, 200, 100000]
+  # Alternative criteria explored in the supplementary sensitivity test, each
+  # given as [minimum stations, radius in km, maximum local gap in degrees].
+  # The fifth entry is the criterion adopted in the main text.
+  well_constrained_criteria:
+    - [4, 50, 180]
+    - [4, 100, 180]
+    - [6, 100, 180]
+    - [6, 150, 120]
+    - [8, 200, 180]
+    - [10, 200, 150]
+
+quantization:
+  # Depth values are tested for being exact integers to this tolerance (km)
+  integer_tolerance_km: 1.0e-9
+  # Operational depths reported separately in the text
+  report_values_km: [0.0, 5.0, 10.0, 15.0, 24.0, 33.0]
+
+agencies:
+  # Agencies reported individually; all others are pooled
+  min_events_to_report: 100
+  # Counts are smaller in the recent era, so a lower bar is used there.
+  # Declared separately so the two thresholds cannot drift into each other.
+  min_events_to_report_recent: 20
+
+figures:
+  # Output resolution for raster formats, in dots per inch. SSA asks for at
+  # least 600 dpi for combination art.
+  dpi: 600
+  # Palette checked for colour-vision-deficiency separation (OKLab dE >= 8)
+  # and normal-vision separation (dE >= 15) against a light surface. The
+  # figure script reads these values and does not override them.
+  colour_series_1: "#2a78d6"
+  colour_series_2: "#eb6834"
+  colour_series_3: "#1baf7a"
+  colour_neutral:  "#9a9a94"
+  colour_ink:      "#0b0b0b"
+  colour_ink_soft: "#52514e"
+  font_size_pt: 8
+
+reproducibility:
+  random_seed: 20260824
+
+sensitivity:
+  # Formal depth sensitivity of a station geometry, used for Table S2 and for
+  # the network-design statements in the Discussion. Every design is evaluated
+  # against the station geometry the Bulletin reports for each event, so the
+  # first design is the recorded network and adds no stations.
+  reading_uncertainty_s: 0.1
+  reading_uncertainty_scaling_s: [0.05, 0.1, 0.2]
+  source_depths_km: [8.0, 11.0, 14.0]
+  max_condition_number: 1.0e12
+  # added_stations lists [distance_km, azimuth_deg] pairs. Azimuths are spaced
+  # uniformly, the design intent stated in the text; distances span 12 to 40 km.
+  designs:
+    - name: "Bulletin geometry as recorded"
+      added_stations: []
+    - name: "Plus one station at 12 km"
+      added_stations: [[12.0, 0.0]]
+    - name: "Plus four stations at 12 to 40 km"
+      added_stations: [[12.0, 0.0], [21.3, 90.0], [30.7, 180.0], [40.0, 270.0]]
+    - name: "Plus six stations at 12 to 40 km"
+      added_stations: [[12.0, 0.0], [17.6, 60.0], [23.2, 120.0], [28.8, 180.0], [34.4, 240.0], [40.0, 300.0]]
+    - name: "Plus four near stations and a regional pair at 150 and 250 km"
+      added_stations: [[12.0, 0.0], [21.3, 90.0], [30.7, 180.0], [40.0, 270.0], [150.0, 45.0], [250.0, 225.0]]

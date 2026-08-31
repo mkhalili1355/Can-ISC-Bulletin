@@ -99,7 +99,7 @@ def read_arrival_file(path: str) -> Tuple[pd.DataFrame, Dict[str, int]]:
             continue
         rows.append(fields)
 
-    table = pd.DataFrame(rows, columns=columns).replace("", np.nan)
+    table = pd.DataFrame(rows, columns=columns).replace("", np.nan).infer_objects(copy=False)
     for column in NUMERIC_COLUMNS:
         if column in table.columns:
             table[column] = pd.to_numeric(table[column], errors="coerce")

@@ -2,8 +2,7 @@
 
 Analysis code for:
 
-> Khalili, M., and A. Fotoohi. What do ISC Bulletin depths resolve?
-> Reporting-agency effects and network geometry in the Fars Arc, Zagros.
+> Khalili, M., and A. Fotoohi. Can ISC Bulletin Focal Depths Resolve Seismicity Relative to the Hormuz Detachment? Evidence from Reporting Agencies and Network Geometry in the Fars Arc, Zagros.
 
 The code reads International Seismological Centre (ISC) Bulletin arrival and
 origin exports for a rectangle covering the Fars Arc, and quantifies four
@@ -15,7 +14,7 @@ geometry capable of constraining focal depth.
 
 Every number quoted in the manuscript is produced by these scripts and written
 to `output/results.json`. Nothing is recomputed at figure time, and
-`scripts/04_check_manuscript.py` compares the manuscript text against that file
+The released test suite re-runs the full analysis on synthetic inputs
 scripts/06_depth_distance_regression.py  fit depth against nearest-station distance
 `scripts/05_depth_sensitivity.py` computes the formal depth sensitivity of the recorded and proposed station geometries, writing `output/depth_sensitivity.json` and `output/table_s2_depth_sensitivity.csv` (Table S2 of the supplement).
 claim by claim.
@@ -54,7 +53,7 @@ The ISC Bulletin is cited separately from this software; see `CITATION.cff`.
 python scripts/01_run_analysis.py  --input data   --output output
 python scripts/02_make_figures.py  --results output --output figures
 python scripts/03_depth_flags.py   --input data   --output output
-python scripts/04_check_manuscript.py --results output
+python scripts/05_depth_distance_regression.py --input output
 ```
 
 `01_run_analysis.py` writes
@@ -71,7 +70,7 @@ flags and the reported depth uncertainties that the CSV export omits, and
 writes `output/depth_flag_diagnostics.json` and
 `output/parsed_isf_origins_full.csv`.
 
-`04_check_manuscript.py` re-evaluates every numerical claim in the manuscript
+`05_depth_distance_regression.py` re-fits the depth-distance gradient and writes its coefficients, standard errors and confidence intervals
 against `output/results.json` and exits non-zero if any of them disagrees.
 
 ## Figures
@@ -126,7 +125,7 @@ scripts/00_download_isc.py   retrieve the ISC exports
 scripts/01_run_analysis.py   run the analysis, write results.json
 scripts/02_make_figures.py   draw the figures from results.json
 scripts/03_depth_flags.py    parse the ISF2 origin blocks
-scripts/04_check_manuscript.py  verify the manuscript against results.json
+scripts/05_depth_distance_regression.py  verify the reported regression
 tests/                       test suite
 ```
 

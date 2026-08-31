@@ -45,8 +45,6 @@ The search rectangle and the year range come from `config.yaml`. Requests are
 spaced out and already downloaded years are skipped, so the script can be
 interrupted and restarted.
 
-The ISC Bulletin is cited separately from this software; see `CITATION.cff`.
-
 ## Running the analysis
 
 ```bash
@@ -133,7 +131,7 @@ tests/                       test suite
 files contain none of their own, so a parameter cannot be changed in one place
 and left stale in another.
 
-## License
+## Citation
 
-MIT, see `LICENSE`. If you use this code, please cite both the software and the
-paper; `CITATION.cff` has the details.
+If you use this code, please cite the associated manuscript; the
+full reference appears in the paper's reference list.

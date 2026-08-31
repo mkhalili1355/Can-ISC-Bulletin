@@ -15,8 +15,8 @@ geometry capable of constraining focal depth.
 Every number quoted in the manuscript is produced by these scripts and written
 to `output/results.json`. Nothing is recomputed at figure time, and
 The released test suite re-runs the full analysis on synthetic inputs
-scripts/06_depth_distance_regression.py  fit depth against nearest-station distance
-`scripts/05_depth_sensitivity.py` computes the formal depth sensitivity of the recorded and proposed station geometries, writing `output/depth_sensitivity.json` and `output/table_s2_depth_sensitivity.csv` (Table S2 of the supplement).
+scripts/05_depth_distance_regression.py  fit depth against nearest-station distance
+`scripts/04_depth_sensitivity.py` computes the formal depth sensitivity of the recorded and proposed station geometries, writing `output/depth_sensitivity.json` and `output/table_s2_depth_sensitivity.csv` (Table S2 of the supplement).
 claim by claim.
 
 ## Requirements
@@ -51,6 +51,7 @@ interrupted and restarted.
 python scripts/01_run_analysis.py  --input data   --output output
 python scripts/02_make_figures.py  --results output --output figures
 python scripts/03_depth_flags.py   --input data   --output output
+python scripts/04_depth_sensitivity.py  --input data   --output output
 python scripts/05_depth_distance_regression.py --input output
 ```
 
@@ -96,7 +97,7 @@ override it.
 ## Tests
 
 ```bash
-python tests/run_tests.py     # 43 tests, no third-party test runner needed
+python tests/run_tests.py     # 45 tests, no third-party test runner needed
 python -m pytest tests        # equivalent, if pytest is installed
 ```
 

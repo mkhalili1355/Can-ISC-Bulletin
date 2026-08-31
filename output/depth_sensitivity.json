@@ -1,0 +1,287 @@
+{
+  "analysis_code_version": "1.0.0",
+  "designs": [
+    {
+      "added_stations": [],
+      "name": "Bulletin geometry as recorded",
+      "sigma_z": {
+        "11": {
+          "median_km": 5.370512697913192,
+          "n_events": 3888,
+          "n_events_undetermined": 168,
+          "q1_km": 3.061354474530492,
+          "q3_km": 11.3421547062274
+        },
+        "14": {
+          "median_km": 4.2556239718557425,
+          "n_events": 3888,
+          "n_events_undetermined": 168,
+          "q1_km": 2.458224914163104,
+          "q3_km": 8.960694733185917
+        },
+        "8": {
+          "median_km": 7.328412778497349,
+          "n_events": 3888,
+          "n_events_undetermined": 168,
+          "q1_km": 4.1411345653644505,
+          "q3_km": 15.553889014649766
+        }
+      },
+      "stations_added": 0
+    },
+    {
+      "added_stations": [
+        [
+          12.0,
+          0.0
+        ]
+      ],
+      "name": "Plus one station at 12 km",
+      "sigma_z": {
+        "11": {
+          "median_km": 1.0415421198246742,
+          "n_events": 4044,
+          "n_events_undetermined": 12,
+          "q1_km": 0.9148137964335028,
+          "q3_km": 1.220221289784345
+        },
+        "14": {
+          "median_km": 0.9389128143459975,
+          "n_events": 4044,
+          "n_events_undetermined": 12,
+          "q1_km": 0.8125672820953365,
+          "q3_km": 1.1111939927217267
+        },
+        "8": {
+          "median_km": 1.2580827580361311,
+          "n_events": 4044,
+          "n_events_undetermined": 12,
+          "q1_km": 1.116440963081763,
+          "q3_km": 1.4535730249712826
+        }
+      },
+      "stations_added": 1
+    },
+    {
+      "added_stations": [
+        [
+          12.0,
+          0.0
+        ],
+        [
+          21.3,
+          90.0
+        ],
+        [
+          30.7,
+          180.0
+        ],
+        [
+          40.0,
+          270.0
+        ]
+      ],
+      "name": "Plus four stations at 12 to 40 km",
+      "sigma_z": {
+        "11": {
+          "median_km": 0.8986653238031086,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.7385651660824846,
+          "q3_km": 0.9914695429250633
+        },
+        "14": {
+          "median_km": 0.7994267959499455,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.6417604171818869,
+          "q3_km": 0.8900702465112891
+        },
+        "8": {
+          "median_km": 1.0948599210782377,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.9208585606938294,
+          "q3_km": 1.2052808527775172
+        }
+      },
+      "stations_added": 4
+    },
+    {
+      "added_stations": [
+        [
+          12.0,
+          0.0
+        ],
+        [
+          17.6,
+          60.0
+        ],
+        [
+          23.2,
+          120.0
+        ],
+        [
+          28.8,
+          180.0
+        ],
+        [
+          34.4,
+          240.0
+        ],
+        [
+          40.0,
+          300.0
+        ]
+      ],
+      "name": "Plus six stations at 12 to 40 km",
+      "sigma_z": {
+        "11": {
+          "median_km": 0.8110555082266546,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.6496638758071291,
+          "q3_km": 0.9094093557357298
+        },
+        "14": {
+          "median_km": 0.7188222855997555,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.5621702233305719,
+          "q3_km": 0.8099806212334407
+        },
+        "8": {
+          "median_km": 0.9940397488911125,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.8138641438082095,
+          "q3_km": 1.11506186325598
+        }
+      },
+      "stations_added": 6
+    },
+    {
+      "added_stations": [
+        [
+          12.0,
+          0.0
+        ],
+        [
+          21.3,
+          90.0
+        ],
+        [
+          30.7,
+          180.0
+        ],
+        [
+          40.0,
+          270.0
+        ],
+        [
+          150.0,
+          45.0
+        ],
+        [
+          250.0,
+          225.0
+        ]
+      ],
+      "name": "Plus four near stations and a regional pair at 150 and 250 km",
+      "sigma_z": {
+        "11": {
+          "median_km": 0.8431157066661196,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.7295217727458951,
+          "q3_km": 0.9046302523256948
+        },
+        "14": {
+          "median_km": 0.7425137439384486,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.6327249955077989,
+          "q3_km": 0.7971114922663497
+        },
+        "8": {
+          "median_km": 1.0398134852652992,
+          "n_events": 4056,
+          "n_events_undetermined": 0,
+          "q1_km": 0.9114113514793447,
+          "q3_km": 1.1163002263616577
+        }
+      },
+      "stations_added": 6
+    }
+  ],
+  "four_parameter_inflation_percent": {
+    "11": 27.346928118446968,
+    "14": 27.260355958182124,
+    "8": 27.37225876276741
+  },
+  "method": "first-order linearized sensitivity, straight rays, uniform half-space, independent reading errors",
+  "n_events": 4056,
+  "reading_uncertainty_s": 0.1,
+  "reading_uncertainty_scaling": {
+    "0.05": {
+      "median_km": 2.685256348956596,
+      "n_events": 3888,
+      "n_events_undetermined": 168,
+      "q1_km": 1.530677237265246,
+      "q3_km": 5.6710773531137
+    },
+    "0.1": {
+      "median_km": 5.370512697913192,
+      "n_events": 3888,
+      "n_events_undetermined": 168,
+      "q1_km": 3.061354474530492,
+      "q3_km": 11.3421547062274
+    },
+    "0.2": {
+      "median_km": 10.741025395826384,
+      "n_events": 3888,
+      "n_events_undetermined": 168,
+      "q1_km": 6.122708949060984,
+      "q3_km": 22.6843094124548
+    }
+  },
+  "self_check": {
+    "azimuth_rotation_difference_km": 0.0,
+    "azimuth_rotation_invariant": true,
+    "linear_in_reading_uncertainty": true
+  },
+  "source_depths_km": [
+    8.0,
+    11.0,
+    14.0
+  ],
+  "stations_per_event": {
+    "max": 1986,
+    "median": 9.0,
+    "min": 1
+  },
+  "two_parameter_recorded_geometry": {
+    "11": {
+      "median_km": 4.217229875319812,
+      "n_events": 4055,
+      "n_events_undetermined": 1,
+      "q1_km": 2.692861731994002,
+      "q3_km": 7.620271057782075
+    },
+    "14": {
+      "median_km": 3.3440295996454266,
+      "n_events": 4055,
+      "n_events_undetermined": 1,
+      "q1_km": 2.159104683831666,
+      "q3_km": 6.009892859291277
+    },
+    "8": {
+      "median_km": 5.753539153409079,
+      "n_events": 4055,
+      "n_events_undetermined": 1,
+      "q1_km": 3.636092385502364,
+      "q3_km": 10.452845999108192
+    }
+  },
+  "velocity_km_s": 6.0
+}

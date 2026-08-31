@@ -1,0 +1,1162 @@
+{
+  "configuration": {
+    "study_period": {
+      "primary_first_year": 2010,
+      "primary_last_year": 2023,
+      "isc_review_cutoff": "2024-08-01",
+      "partial_final_year": 2026
+    },
+    "study_area": {
+      "lat_min": 26.5,
+      "lat_max": 30.0,
+      "lon_min": 50.0,
+      "lon_max": 53.0,
+      "target": {
+        "name": "Darang Fault Zone",
+        "lat_min": 27.5,
+        "lat_max": 29.1,
+        "lon_min": 50.5,
+        "lon_max": 52.1
+      }
+    },
+    "physics": {
+      "detachment_depth_km": 11.0,
+      "vp_crust_km_s": 6.0,
+      "vp_mantle_km_s": 8.0,
+      "earth_radius_km": 6371.0,
+      "km_per_degree": 111.195
+    },
+    "thresholds": {
+      "gap_distance_cutoffs_km": [
+        50,
+        75,
+        100,
+        150,
+        200,
+        300,
+        400,
+        600,
+        1000,
+        null
+      ],
+      "local_network_km": 200,
+      "max_gap_deg": 180,
+      "min_stations": 8,
+      "nearest_station_bins_km": [
+        0,
+        50,
+        100,
+        200,
+        100000
+      ]
+    },
+    "quantization": {
+      "integer_tolerance_km": 1e-09,
+      "report_values_km": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        24.0,
+        33.0
+      ]
+    },
+    "agencies": {
+      "min_events_to_report": 100,
+      "min_events_to_report_recent": 20
+    },
+    "figures": {
+      "dpi": 600,
+      "colour_series_1": "#2a78d6",
+      "colour_series_2": "#eb6834",
+      "colour_series_3": "#1baf7a",
+      "colour_neutral": "#9a9a94",
+      "colour_ink": "#0b0b0b",
+      "colour_ink_soft": "#52514e",
+      "font_size_pt": 8
+    },
+    "reproducibility": {
+      "random_seed": 20260824
+    }
+  },
+  "environment": {
+    "python": "3.13.2",
+    "platform": "Windows",
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "analysis_code_version": "1.0.0"
+  },
+  "provenance": [
+    {
+      "file": "arr_2010.txt",
+      "bytes": 2792441,
+      "sha256": "e81a9cd3e641f4b82ddfd2fee45bf76b2a91be8f5786f75539efabbc3ed6d3fe",
+      "rows_kept": 12279,
+      "rows_repaired": 12279,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2011.txt",
+      "bytes": 1820727,
+      "sha256": "18bc080d59590756d83d137639a1e2ec9099b38f4994ea808de41cc54303679c",
+      "rows_kept": 8006,
+      "rows_repaired": 8006,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2012.txt",
+      "bytes": 3785678,
+      "sha256": "43cd3f757a5a4b149536a3b49b25acd932cb50ab9b35af8f059eea52cf61592c",
+      "rows_kept": 16657,
+      "rows_repaired": 16657,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2013.txt",
+      "bytes": 14976453,
+      "sha256": "fe043cd4c7c6e4416e7827ed443a27786bd16d5d3cd11383aacb3c24b159b22a",
+      "rows_kept": 65954,
+      "rows_repaired": 65954,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2014.txt",
+      "bytes": 4704169,
+      "sha256": "cfc53be3441868bb4d768405433d08a10080af2c34055e203f3071a5b79ea949",
+      "rows_kept": 20703,
+      "rows_repaired": 20703,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2015.txt",
+      "bytes": 4356131,
+      "sha256": "b97009e591738743453f99c922f4eb48ca00a4515005b89e3e67176d4dfcb4fa",
+      "rows_kept": 19171,
+      "rows_repaired": 19171,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2016.txt",
+      "bytes": 2542777,
+      "sha256": "fe8f47090738cf029226609d84e63eedf70f65bf05814a1b066aea6540d9c912",
+      "rows_kept": 11186,
+      "rows_repaired": 11186,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2017.txt",
+      "bytes": 3205730,
+      "sha256": "09bb542a4ede1bec8e546a3cb44413496ec61b5fce05a5ec92019df0a3438aed",
+      "rows_kept": 14106,
+      "rows_repaired": 14106,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2018.txt",
+      "bytes": 4159176,
+      "sha256": "817569273d1d77b229d178cfe4b53add5b8ad4e8e6455a93def84057350caf23",
+      "rows_kept": 18302,
+      "rows_repaired": 18259,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2019.txt",
+      "bytes": 3108533,
+      "sha256": "644f94f93a22f4b65006519218953bbe9041e4b8cb3c5d80e32889e5ba6ab6f1",
+      "rows_kept": 13678,
+      "rows_repaired": 13678,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2020.txt",
+      "bytes": 2681228,
+      "sha256": "eac6ad51f9eb38c362e7d55f6751cd977e022c205afa30c0a8863dd25e0b6dcb",
+      "rows_kept": 11796,
+      "rows_repaired": 11788,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2021.txt",
+      "bytes": 9123349,
+      "sha256": "58baed94f120273ed4ab38e2b758ead8a1eba5c0b9eb3b53625f3dd61cb5a139",
+      "rows_kept": 40130,
+      "rows_repaired": 31346,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2022.txt",
+      "bytes": 2453861,
+      "sha256": "b130667f73b7a03b305b4df66516179f898425deb7a8a8686f4ac2655eee3d7f",
+      "rows_kept": 10788,
+      "rows_repaired": 9173,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2023.txt",
+      "bytes": 2789174,
+      "sha256": "ba1ece787db7b4e039a0377a903788c2d96950f70f30700021dfbbd245831a47",
+      "rows_kept": 12266,
+      "rows_repaired": 10423,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2024.txt",
+      "bytes": 2719052,
+      "sha256": "81263b3a51bb1ffaaaa0368eb2ff5af5489a04a65aa2e6f54f07e792a283eeb1",
+      "rows_kept": 11950,
+      "rows_repaired": 9359,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2025.txt",
+      "bytes": 5144142,
+      "sha256": "c6aa61e638ddd482faac768ae415338dd46dafb2d5f97902b3a0e4b8570a3f21",
+      "rows_kept": 22615,
+      "rows_repaired": 15739,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2026-8.txt",
+      "bytes": 1109704,
+      "sha256": "42cac413c28581742c14f47402758b5fa14ff6a87ad4996eef3a8d6b25978e8d",
+      "rows_kept": 4870,
+      "rows_repaired": 3422,
+      "rows_rejected": 0,
+      "status": "ok"
+    },
+    {
+      "file": "arr_2026.txt",
+      "bytes": 162893,
+      "sha256": "138b0c2d504743ef569be982b29dac862b8745c418568072771714cf5cebf030",
+      "rows_kept": 712,
+      "rows_repaired": 577,
+      "rows_rejected": 0,
+      "status": "ok"
+    }
+  ],
+  "dataset": {
+    "n_arrival_rows": 275022,
+    "n_events": 4056,
+    "n_distinct_stations": 4576,
+    "first_year": 2010,
+    "last_year": 2023,
+    "events_per_year": {
+      "2010": 72,
+      "2011": 169,
+      "2012": 201,
+      "2013": 520,
+      "2014": 259,
+      "2015": 178,
+      "2016": 126,
+      "2017": 298,
+      "2018": 476,
+      "2019": 404,
+      "2020": 311,
+      "2021": 565,
+      "2022": 217,
+      "2023": 260
+    },
+    "magnitude": {
+      "n": 3696,
+      "min": 1.5,
+      "p25": 2.7,
+      "median": 3.0,
+      "p75": 3.5,
+      "max": 6.3,
+      "mean": 3.1293560606060606
+    },
+    "n_arrival_rows_all_periods": 315169,
+    "n_events_all_periods": 4630
+  },
+  "depth_quantization": {
+    "n_events_with_depth": 4056,
+    "percent_integer_valued": 71.07988165680473,
+    "operational_values": {
+      "0.0": {
+        "n": 44,
+        "percent": 1.0848126232741617
+      },
+      "5.0": {
+        "n": 211,
+        "percent": 5.202169625246548
+      },
+      "10.0": {
+        "n": 1203,
+        "percent": 29.659763313609467
+      },
+      "15.0": {
+        "n": 182,
+        "percent": 4.487179487179487
+      },
+      "24.0": {
+        "n": 205,
+        "percent": 5.054240631163708
+      },
+      "33.0": {
+        "n": 1,
+        "percent": 0.02465483234714004
+      }
+    },
+    "ten_most_frequent_values": {
+      "10.0": 29.659763313609467,
+      "8.0": 5.473372781065089,
+      "5.0": 5.202169625246548,
+      "24.0": 5.054240631163708,
+      "15.0": 4.487179487179487,
+      "16.0": 2.8106508875739644,
+      "20.0": 2.2189349112426036,
+      "6.0": 1.799802761341223,
+      "14.0": 1.7011834319526626,
+      "26.0": 1.6025641025641024
+    },
+    "distribution": {
+      "n": 4056,
+      "min": 0.0,
+      "p25": 10.0,
+      "median": 10.0,
+      "p75": 16.2,
+      "max": 120.9,
+      "mean": 13.057692307692308
+    }
+  },
+  "agency_confounding": {
+    "agencies_reported_individually": [
+      "ISC",
+      "TEH"
+    ],
+    "per_year": [
+      {
+        "year": 2010,
+        "n_events": 72,
+        "pooled_median_depth_km": 15.0,
+        "pooled_percent_shallower_than_detachment": 26.38888888888889,
+        "cumulative_median_depth_km": 15.0,
+        "cumulative_percent_shallower_than_detachment": 26.38888888888889,
+        "share_ISC_percent": 75.0,
+        "median_ISC_km": 16.0,
+        "share_TEH_percent": 2.7777777777777777,
+        "median_TEH_km": 17.8
+      },
+      {
+        "year": 2011,
+        "n_events": 169,
+        "pooled_median_depth_km": 15.0,
+        "pooled_percent_shallower_than_detachment": 42.60355029585799,
+        "cumulative_median_depth_km": 15.0,
+        "cumulative_percent_shallower_than_detachment": 37.75933609958506,
+        "share_ISC_percent": 24.85207100591716,
+        "median_ISC_km": 16.0,
+        "share_TEH_percent": 63.905325443786985,
+        "median_TEH_km": 11.9
+      },
+      {
+        "year": 2012,
+        "n_events": 201,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 52.736318407960205,
+        "cumulative_median_depth_km": 14.0,
+        "cumulative_percent_shallower_than_detachment": 44.57013574660634,
+        "share_ISC_percent": 41.791044776119406,
+        "median_ISC_km": 16.0,
+        "share_TEH_percent": 55.72139303482587,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2013,
+        "n_events": 520,
+        "pooled_median_depth_km": 16.450000000000003,
+        "pooled_percent_shallower_than_detachment": 24.615384615384617,
+        "cumulative_median_depth_km": 15.0,
+        "cumulative_percent_shallower_than_detachment": 33.78378378378378,
+        "share_ISC_percent": 64.61538461538461,
+        "median_ISC_km": 24.0,
+        "share_TEH_percent": 28.653846153846153,
+        "median_TEH_km": 10.1
+      },
+      {
+        "year": 2014,
+        "n_events": 259,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 56.37065637065637,
+        "cumulative_median_depth_km": 15.0,
+        "cumulative_percent_shallower_than_detachment": 38.57493857493858,
+        "share_ISC_percent": 33.97683397683398,
+        "median_ISC_km": 14.0,
+        "share_TEH_percent": 64.0926640926641,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2015,
+        "n_events": 178,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 55.61797752808989,
+        "cumulative_median_depth_km": 15.0,
+        "cumulative_percent_shallower_than_detachment": 40.7433881343817,
+        "share_ISC_percent": 58.42696629213483,
+        "median_ISC_km": 11.25,
+        "share_TEH_percent": 28.089887640449437,
+        "median_TEH_km": 9.6
+      },
+      {
+        "year": 2016,
+        "n_events": 126,
+        "pooled_median_depth_km": 14.0,
+        "pooled_percent_shallower_than_detachment": 34.92063492063492,
+        "cumulative_median_depth_km": 14.9,
+        "cumulative_percent_shallower_than_detachment": 40.26229508196722,
+        "share_ISC_percent": 53.17460317460318,
+        "median_ISC_km": 15.0,
+        "share_TEH_percent": 45.23809523809524,
+        "median_TEH_km": 11.9
+      },
+      {
+        "year": 2017,
+        "n_events": 298,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 58.053691275167786,
+        "cumulative_median_depth_km": 13.9,
+        "cumulative_percent_shallower_than_detachment": 43.170597915523864,
+        "share_ISC_percent": 20.80536912751678,
+        "median_ISC_km": 15.0,
+        "share_TEH_percent": 78.52348993288591,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2018,
+        "n_events": 476,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 65.96638655462185,
+        "cumulative_median_depth_km": 11.5,
+        "cumulative_percent_shallower_than_detachment": 47.890387124836884,
+        "share_ISC_percent": 15.546218487394958,
+        "median_ISC_km": 14.0,
+        "share_TEH_percent": 84.03361344537815,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2019,
+        "n_events": 404,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 65.5940594059406,
+        "cumulative_median_depth_km": 10.7,
+        "cumulative_percent_shallower_than_detachment": 50.53644099149094,
+        "share_ISC_percent": 15.841584158415841,
+        "median_ISC_km": 15.0,
+        "share_TEH_percent": 83.91089108910892,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2020,
+        "n_events": 311,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 72.9903536977492,
+        "cumulative_median_depth_km": 10.0,
+        "cumulative_percent_shallower_than_detachment": 52.85335102853351,
+        "share_ISC_percent": 15.755627009646302,
+        "median_ISC_km": 15.0,
+        "share_TEH_percent": 84.2443729903537,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2021,
+        "n_events": 565,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 71.15044247787611,
+        "cumulative_median_depth_km": 10.0,
+        "cumulative_percent_shallower_than_detachment": 55.74182732606874,
+        "share_ISC_percent": 28.849557522123895,
+        "median_ISC_km": 10.0,
+        "share_TEH_percent": 70.61946902654867,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2022,
+        "n_events": 217,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 57.6036866359447,
+        "cumulative_median_depth_km": 10.0,
+        "cumulative_percent_shallower_than_detachment": 55.84826132771338,
+        "share_ISC_percent": 32.25806451612903,
+        "median_ISC_km": 11.0,
+        "share_TEH_percent": 67.28110599078342,
+        "median_TEH_km": 10.0
+      },
+      {
+        "year": 2023,
+        "n_events": 260,
+        "pooled_median_depth_km": 10.0,
+        "pooled_percent_shallower_than_detachment": 61.15384615384616,
+        "cumulative_median_depth_km": 10.0,
+        "cumulative_percent_shallower_than_detachment": 56.18836291913215,
+        "share_ISC_percent": 29.615384615384617,
+        "median_ISC_km": 15.0,
+        "share_TEH_percent": 70.0,
+        "median_TEH_km": 10.0
+      }
+    ],
+    "per_agency": {
+      "ISC": {
+        "n": 1334,
+        "median_km": 15.0,
+        "percent_integer_valued": 90.1799100449775,
+        "percent_equal_to_10km": 28.56071964017991
+      },
+      "TEH": {
+        "n": 2606,
+        "median_km": 10.0,
+        "percent_integer_valued": 60.629316960859555,
+        "percent_equal_to_10km": 30.89025326170376
+      }
+    },
+    "annual_median_first_year_km": 15.0,
+    "annual_median_last_year_km": 10.0,
+    "annual_percent_shallow_first_year": 26.38888888888889,
+    "annual_percent_shallow_last_year": 61.15384615384616,
+    "cumulative_median_first_year_km": 15.0,
+    "cumulative_median_last_year_km": 10.0,
+    "cumulative_percent_shallow_first_year": 26.38888888888889,
+    "cumulative_percent_shallow_last_year": 56.18836291913215
+  },
+  "gap_versus_distance_cutoff": {
+    "rows": [
+      {
+        "cutoff_km": 50,
+        "n_events_with_any_station": 1244,
+        "median_gap_deg": 360.0,
+        "p25_gap_deg": 360.0,
+        "p75_gap_deg": 360.0,
+        "percent_gap_above_180": 99.91961414790997
+      },
+      {
+        "cutoff_km": 75,
+        "n_events_with_any_station": 2093,
+        "median_gap_deg": 360.0,
+        "p25_gap_deg": 265.5,
+        "p75_gap_deg": 360.0,
+        "percent_gap_above_180": 99.95222169135212
+      },
+      {
+        "cutoff_km": 100,
+        "n_events_with_any_station": 2707,
+        "median_gap_deg": 360.0,
+        "p25_gap_deg": 230.39999999999998,
+        "p75_gap_deg": 360.0,
+        "percent_gap_above_180": 98.00517177687476
+      },
+      {
+        "cutoff_km": 150,
+        "n_events_with_any_station": 3550,
+        "median_gap_deg": 238.75,
+        "p25_gap_deg": 182.60000000000002,
+        "p75_gap_deg": 353.95,
+        "percent_gap_above_180": 76.70422535211267
+      },
+      {
+        "cutoff_km": 200,
+        "n_events_with_any_station": 3886,
+        "median_gap_deg": 208.05,
+        "p25_gap_deg": 155.925,
+        "p75_gap_deg": 273.1,
+        "percent_gap_above_180": 63.17550180133814
+      },
+      {
+        "cutoff_km": 300,
+        "n_events_with_any_station": 3928,
+        "median_gap_deg": 189.09999999999997,
+        "p25_gap_deg": 142.47500000000002,
+        "p75_gap_deg": 251.2,
+        "percent_gap_above_180": 55.26985743380855
+      },
+      {
+        "cutoff_km": 400,
+        "n_events_with_any_station": 3948,
+        "median_gap_deg": 182.7,
+        "p25_gap_deg": 133.575,
+        "p75_gap_deg": 239.625,
+        "percent_gap_above_180": 51.342451874366766
+      },
+      {
+        "cutoff_km": 600,
+        "n_events_with_any_station": 3979,
+        "median_gap_deg": 175.5,
+        "p25_gap_deg": 128.95,
+        "p75_gap_deg": 219.0,
+        "percent_gap_above_180": 47.574767529530035
+      },
+      {
+        "cutoff_km": 1000,
+        "n_events_with_any_station": 4015,
+        "median_gap_deg": 170.0,
+        "p25_gap_deg": 120.90000000000002,
+        "p75_gap_deg": 215.0,
+        "percent_gap_above_180": 45.230386052303864
+      },
+      {
+        "cutoff_km": null,
+        "n_events_with_any_station": 4056,
+        "median_gap_deg": 155.40000000000003,
+        "p25_gap_deg": 103.825,
+        "p75_gap_deg": 207.2,
+        "percent_gap_above_180": 38.19033530571992
+      }
+    ]
+  },
+  "network_capability": {
+    "nearest_station_km": {
+      "n": 4056,
+      "min": 2.2239,
+      "p25": 42.2541,
+      "median": 73.3887,
+      "p75": 113.4189,
+      "max": 4133.11815,
+      "mean": 114.03792936390532
+    },
+    "percent_with_station_closer_than_detachment": 1.0848126232741617,
+    "n_with_station_closer_than_own_depth": 60,
+    "percent_with_station_closer_than_own_depth": 1.4792899408284024,
+    "best_local_gap_deg": 75.4,
+    "n_well_constrained": 15,
+    "n_events": 4056,
+    "percent_well_constrained": 0.3698224852071006,
+    "criterion": {
+      "min_stations_within_200km": 8,
+      "max_local_gap_deg": 180
+    },
+    "n_stations_inside_study_area": 9
+  },
+  "depth_distance_tradeoff": {
+    "ISC": [
+      {
+        "nearest_station_from_km": 0,
+        "nearest_station_to_km": 50,
+        "n": 309,
+        "median_depth_km": 14.0,
+        "percent_shallower_than_detachment": 42.07119741100323
+      },
+      {
+        "nearest_station_from_km": 50,
+        "nearest_station_to_km": 100,
+        "n": 488,
+        "median_depth_km": 15.0,
+        "percent_shallower_than_detachment": 33.81147540983606
+      },
+      {
+        "nearest_station_from_km": 100,
+        "nearest_station_to_km": 200,
+        "n": 479,
+        "median_depth_km": 22.0,
+        "percent_shallower_than_detachment": 20.668058455114824
+      },
+      {
+        "nearest_station_from_km": 200,
+        "nearest_station_to_km": 100000,
+        "n": 58,
+        "median_depth_km": 16.0,
+        "percent_shallower_than_detachment": 25.862068965517242
+      }
+    ],
+    "TEH": [
+      {
+        "nearest_station_from_km": 0,
+        "nearest_station_to_km": 50,
+        "n": 926,
+        "median_depth_km": 10.0,
+        "percent_shallower_than_detachment": 79.37365010799135
+      },
+      {
+        "nearest_station_from_km": 50,
+        "nearest_station_to_km": 100,
+        "n": 965,
+        "median_depth_km": 10.0,
+        "percent_shallower_than_detachment": 62.383419689119165
+      },
+      {
+        "nearest_station_from_km": 100,
+        "nearest_station_to_km": 200,
+        "n": 690,
+        "median_depth_km": 10.0,
+        "percent_shallower_than_detachment": 64.78260869565217
+      },
+      {
+        "nearest_station_from_km": 200,
+        "nearest_station_to_km": 100000,
+        "n": 25,
+        "median_depth_km": 10.0,
+        "percent_shallower_than_detachment": 56.00000000000001
+      }
+    ]
+  },
+  "takeoff_angle_geometry": {
+    "source_depth_km": 11.0,
+    "pn_critical_angle_deg": 48.590377890729144,
+    "direct_ray_takeoff": [
+      {
+        "distance_km": 10,
+        "takeoff_from_vertical_deg": 42.27368900609374
+      },
+      {
+        "distance_km": 20,
+        "takeoff_from_vertical_deg": 61.189206257026946
+      },
+      {
+        "distance_km": 40,
+        "takeoff_from_vertical_deg": 74.6237487511738
+      },
+      {
+        "distance_km": 60,
+        "takeoff_from_vertical_deg": 79.61114218453038
+      },
+      {
+        "distance_km": 100,
+        "takeoff_from_vertical_deg": 83.72270151040246
+      },
+      {
+        "distance_km": 150,
+        "takeoff_from_vertical_deg": 85.80581721160914
+      },
+      {
+        "distance_km": 200,
+        "takeoff_from_vertical_deg": 86.85190390043724
+      },
+      {
+        "distance_km": 300,
+        "takeoff_from_vertical_deg": 87.90009548235483
+      },
+      {
+        "distance_km": 400,
+        "takeoff_from_vertical_deg": 88.42476307431694
+      }
+    ],
+    "note": "The direct-ray values assume a uniform half-space and are a first-order bound only; the Pn value is the Snell critical angle for the configured crust and mantle velocities."
+  },
+  "target_area": {
+    "box": {
+      "name": "Darang Fault Zone",
+      "lat_min": 27.5,
+      "lat_max": 29.1,
+      "lon_min": 50.5,
+      "lon_max": 52.1
+    },
+    "n_events": 1057,
+    "n_by_year": {
+      "2010": 9,
+      "2011": 35,
+      "2012": 36,
+      "2013": 429,
+      "2014": 55,
+      "2015": 51,
+      "2016": 25,
+      "2017": 79,
+      "2018": 70,
+      "2019": 106,
+      "2020": 44,
+      "2021": 24,
+      "2022": 34,
+      "2023": 60
+    },
+    "depth_histogram_2km_bins": [
+      {
+        "from_km": 0.0,
+        "to_km": 2.0,
+        "n": 18
+      },
+      {
+        "from_km": 2.0,
+        "to_km": 4.0,
+        "n": 4
+      },
+      {
+        "from_km": 4.0,
+        "to_km": 6.0,
+        "n": 40
+      },
+      {
+        "from_km": 6.0,
+        "to_km": 8.0,
+        "n": 25
+      },
+      {
+        "from_km": 8.0,
+        "to_km": 10.0,
+        "n": 52
+      },
+      {
+        "from_km": 10.0,
+        "to_km": 12.0,
+        "n": 253
+      },
+      {
+        "from_km": 12.0,
+        "to_km": 14.0,
+        "n": 34
+      },
+      {
+        "from_km": 14.0,
+        "to_km": 16.0,
+        "n": 129
+      },
+      {
+        "from_km": 16.0,
+        "to_km": 18.0,
+        "n": 130
+      },
+      {
+        "from_km": 18.0,
+        "to_km": 20.0,
+        "n": 63
+      },
+      {
+        "from_km": 20.0,
+        "to_km": 22.0,
+        "n": 24
+      },
+      {
+        "from_km": 22.0,
+        "to_km": 24.0,
+        "n": 19
+      },
+      {
+        "from_km": 24.0,
+        "to_km": 26.0,
+        "n": 180
+      },
+      {
+        "from_km": 26.0,
+        "to_km": 28.0,
+        "n": 53
+      },
+      {
+        "from_km": 28.0,
+        "to_km": 30.0,
+        "n": 15
+      },
+      {
+        "from_km": 30.0,
+        "to_km": 32.0,
+        "n": 4
+      },
+      {
+        "from_km": 32.0,
+        "to_km": 34.0,
+        "n": 5
+      },
+      {
+        "from_km": 34.0,
+        "to_km": 36.0,
+        "n": 3
+      },
+      {
+        "from_km": 36.0,
+        "to_km": 38.0,
+        "n": 2
+      },
+      {
+        "from_km": 38.0,
+        "to_km": 40.0,
+        "n": 2
+      }
+    ],
+    "nearest_station_km": {
+      "n": 1057,
+      "min": 2.2239,
+      "p25": 63.38114999999999,
+      "median": 113.4189,
+      "p75": 143.44155,
+      "max": 4133.11815,
+      "mean": 168.18638245033114
+    },
+    "gap_local_deg": {
+      "n": 1057,
+      "min": 98.80000000000001,
+      "p25": 192.2,
+      "median": 265.6,
+      "p75": 282.4,
+      "max": 360.0,
+      "mean": 246.27199621570483
+    }
+  },
+  "recent_era": {
+    "years": [
+      2024,
+      2025,
+      2026
+    ],
+    "n_events": 574,
+    "n_events_with_depth": 574,
+    "partial_final_year": 2026,
+    "isc_review_cutoff": "2024-08-01",
+    "min_events_to_report": 20,
+    "agencies_reported": [
+      "TEH",
+      "IDC",
+      "NEIC",
+      "DSN",
+      "OMAN",
+      "ISC",
+      "GFZ"
+    ],
+    "by_agency": {
+      "TEH": {
+        "n": 293,
+        "median_km": 11.2,
+        "percent_integer_valued": 54.94880546075085,
+        "percent_exactly_10km": 20.819112627986346,
+        "percent_exactly_0km": 0.0,
+        "modal_value_km": 10.0,
+        "percent_at_modal_value": 20.819112627986346,
+        "n_distinct_values": 120
+      },
+      "IDC": {
+        "n": 124,
+        "median_km": 0.0,
+        "percent_integer_valued": 100.0,
+        "percent_exactly_10km": 0.0,
+        "percent_exactly_0km": 100.0,
+        "modal_value_km": 0.0,
+        "percent_at_modal_value": 100.0,
+        "n_distinct_values": 1
+      },
+      "NEIC": {
+        "n": 36,
+        "median_km": 10.0,
+        "percent_integer_valued": 100.0,
+        "percent_exactly_10km": 100.0,
+        "percent_exactly_0km": 0.0,
+        "modal_value_km": 10.0,
+        "percent_at_modal_value": 100.0,
+        "n_distinct_values": 1
+      },
+      "DSN": {
+        "n": 36,
+        "median_km": 10.0,
+        "percent_integer_valued": 100.0,
+        "percent_exactly_10km": 94.44444444444444,
+        "percent_exactly_0km": 2.7777777777777777,
+        "modal_value_km": 10.0,
+        "percent_at_modal_value": 94.44444444444444,
+        "n_distinct_values": 3
+      },
+      "OMAN": {
+        "n": 31,
+        "median_km": 10.0,
+        "percent_integer_valued": 67.74193548387096,
+        "percent_exactly_10km": 61.29032258064516,
+        "percent_exactly_0km": 0.0,
+        "modal_value_km": 10.0,
+        "percent_at_modal_value": 61.29032258064516,
+        "n_distinct_values": 13
+      },
+      "ISC": {
+        "n": 30,
+        "median_km": 13.0,
+        "percent_integer_valued": 86.66666666666667,
+        "percent_exactly_10km": 33.33333333333333,
+        "percent_exactly_0km": 0.0,
+        "modal_value_km": 10.0,
+        "percent_at_modal_value": 33.33333333333333,
+        "n_distinct_values": 12
+      },
+      "GFZ": {
+        "n": 21,
+        "median_km": 10.0,
+        "percent_integer_valued": 90.47619047619048,
+        "percent_exactly_10km": 80.95238095238095,
+        "percent_exactly_0km": 0.0,
+        "modal_value_km": 10.0,
+        "percent_at_modal_value": 80.95238095238095,
+        "n_distinct_values": 5
+      }
+    },
+    "composition_by_year": [
+      {
+        "year": 2024,
+        "n_events": 194,
+        "is_partial_year": false,
+        "shares_percent": {
+          "TEH": 76.28865979381443,
+          "ISC": 15.463917525773196,
+          "OMAN": 2.0618556701030926,
+          "NEIC": 1.5463917525773196,
+          "GFZ": 1.5463917525773196,
+          "IDC": 1.0309278350515463,
+          "THR": 1.0309278350515463,
+          "DSN": 0.5154639175257731,
+          "AUST": 0.5154639175257731
+        },
+        "leading_agency": "TEH",
+        "leading_agency_percent": 76.28865979381443
+      },
+      {
+        "year": 2025,
+        "n_events": 295,
+        "is_partial_year": false,
+        "shares_percent": {
+          "TEH": 49.152542372881356,
+          "IDC": 16.949152542372882,
+          "DSN": 11.864406779661017,
+          "NEIC": 10.847457627118644,
+          "OMAN": 9.152542372881356,
+          "GFZ": 2.0338983050847457
+        },
+        "leading_agency": "TEH",
+        "leading_agency_percent": 49.152542372881356
+      },
+      {
+        "year": 2026,
+        "n_events": 85,
+        "is_partial_year": true,
+        "shares_percent": {
+          "IDC": 84.70588235294117,
+          "GFZ": 14.117647058823529,
+          "NEIC": 1.1764705882352942
+        },
+        "leading_agency": "IDC",
+        "leading_agency_percent": 84.70588235294117
+      }
+    ],
+    "agencies_with_invariant_depth": {
+      "IDC": {
+        "value_km": 0.0,
+        "n": 124
+      },
+      "NEIC": {
+        "value_km": 10.0,
+        "n": 36
+      }
+    }
+  },
+  "era_comparison": {
+    "agencies_in_both_periods": [
+      "IDC",
+      "ISC",
+      "OMAN",
+      "TEH"
+    ],
+    "agencies_only_in_primary": [
+      "CSEM"
+    ],
+    "agencies_only_in_recent": [
+      "DSN",
+      "GFZ",
+      "NEIC"
+    ],
+    "by_agency": {
+      "IDC": {
+        "primary": {
+          "n": 31,
+          "median_km": 0.0,
+          "percent_integer_valued": 100.0,
+          "percent_exactly_10km": 0.0,
+          "percent_exactly_0km": 100.0,
+          "modal_value_km": 0.0,
+          "percent_at_modal_value": 100.0,
+          "n_distinct_values": 1
+        },
+        "recent": {
+          "n": 124,
+          "median_km": 0.0,
+          "percent_integer_valued": 100.0,
+          "percent_exactly_10km": 0.0,
+          "percent_exactly_0km": 100.0,
+          "modal_value_km": 0.0,
+          "percent_at_modal_value": 100.0,
+          "n_distinct_values": 1
+        },
+        "share_of_primary_percent": 0.7642998027613412,
+        "share_of_recent_percent": 21.60278745644599,
+        "median_shift_km": 0.0
+      },
+      "ISC": {
+        "primary": {
+          "n": 1334,
+          "median_km": 15.0,
+          "percent_integer_valued": 90.1799100449775,
+          "percent_exactly_10km": 28.56071964017991,
+          "percent_exactly_0km": 0.0,
+          "modal_value_km": 10.0,
+          "percent_at_modal_value": 28.56071964017991,
+          "n_distinct_values": 106
+        },
+        "recent": {
+          "n": 30,
+          "median_km": 13.0,
+          "percent_integer_valued": 86.66666666666667,
+          "percent_exactly_10km": 33.33333333333333,
+          "percent_exactly_0km": 0.0,
+          "modal_value_km": 10.0,
+          "percent_at_modal_value": 33.33333333333333,
+          "n_distinct_values": 12
+        },
+        "share_of_primary_percent": 32.88954635108481,
+        "share_of_recent_percent": 5.2264808362369335,
+        "median_shift_km": -2.0
+      },
+      "OMAN": {
+        "primary": {
+          "n": 21,
+          "median_km": 20.0,
+          "percent_integer_valued": 90.47619047619048,
+          "percent_exactly_10km": 33.33333333333333,
+          "percent_exactly_0km": 0.0,
+          "modal_value_km": 10.0,
+          "percent_at_modal_value": 33.33333333333333,
+          "n_distinct_values": 13
+        },
+        "recent": {
+          "n": 31,
+          "median_km": 10.0,
+          "percent_integer_valued": 67.74193548387096,
+          "percent_exactly_10km": 61.29032258064516,
+          "percent_exactly_0km": 0.0,
+          "modal_value_km": 10.0,
+          "percent_at_modal_value": 61.29032258064516,
+          "n_distinct_values": 13
+        },
+        "share_of_primary_percent": 0.5177514792899408,
+        "share_of_recent_percent": 5.400696864111498,
+        "median_shift_km": -10.0
+      },
+      "TEH": {
+        "primary": {
+          "n": 2606,
+          "median_km": 10.0,
+          "percent_integer_valued": 60.629316960859555,
+          "percent_exactly_10km": 30.89025326170376,
+          "percent_exactly_0km": 0.07674597083653108,
+          "modal_value_km": 10.0,
+          "percent_at_modal_value": 30.89025326170376,
+          "n_distinct_values": 254
+        },
+        "recent": {
+          "n": 293,
+          "median_km": 11.2,
+          "percent_integer_valued": 54.94880546075085,
+          "percent_exactly_10km": 20.819112627986346,
+          "percent_exactly_0km": 0.0,
+          "modal_value_km": 10.0,
+          "percent_at_modal_value": 20.819112627986346,
+          "n_distinct_values": 120
+        },
+        "share_of_primary_percent": 64.25049309664695,
+        "share_of_recent_percent": 51.045296167247386,
+        "median_shift_km": 1.1999999999999993
+      }
+    }
+  }
+}

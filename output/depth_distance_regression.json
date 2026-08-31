@@ -1,0 +1,54 @@
+{
+  "analysis_code_version": "1.0.0",
+  "n_events": 145,
+  "median_depth_km": 15.4,
+  "median_nearest_station_km": 58.93335,
+  "spearman": {
+    "rho": 0.19686718119621036,
+    "p_value": 0.017627461788364614
+  },
+  "depth_on_log_distance": [
+    {
+      "term": "intercept",
+      "coefficient": 11.293125371403615,
+      "standard_error": 2.001835872021253,
+      "p_value": 8.733847145277044e-08,
+      "ci_low": 7.336112021643241,
+      "ci_high": 15.250138721163989
+    },
+    {
+      "term": "log10_distance",
+      "coefficient": 2.6942080211602635,
+      "standard_error": 1.1519980774156826,
+      "p_value": 0.020734729592207558,
+      "ci_low": 0.41706240950257323,
+      "ci_high": 4.971353632817953
+    }
+  ],
+  "depth_on_log_distance_and_year": [
+    {
+      "term": "intercept",
+      "coefficient": 12.048181336051696,
+      "standard_error": 2.0093397735180756,
+      "p_value": 1.5918337244842714e-08,
+      "ci_low": 8.076096381817392,
+      "ci_high": 16.020266290286003
+    },
+    {
+      "term": "log10_distance",
+      "coefficient": 2.2474165843841583,
+      "standard_error": 1.1573521316933972,
+      "p_value": 0.05413368190990013,
+      "ci_low": -0.04044983305178196,
+      "ci_high": 4.5352830018200985
+    },
+    {
+      "term": "year_centered",
+      "coefficient": -0.26021917183036647,
+      "standard_error": 0.12245673912457343,
+      "p_value": 0.03531908790406143,
+      "ci_low": -0.5022929999762551,
+      "ci_high": -0.018145343684477788
+    }
+  ]
+}

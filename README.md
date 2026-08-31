@@ -13,11 +13,13 @@ epicentral-distance cutoffs, and what fraction of events has a recording
 geometry capable of constraining focal depth.
 
 Every number quoted in the manuscript is produced by these scripts and written
-to `output/results.json`. Nothing is recomputed at figure time, and
-The released test suite re-runs the full analysis on synthetic inputs
-scripts/05_depth_distance_regression.py  fit depth against nearest-station distance
-`scripts/04_depth_sensitivity.py` computes the formal depth sensitivity of the recorded and proposed station geometries, writing `output/depth_sensitivity.json` and `output/table_s2_depth_sensitivity.csv` (Table S2 of the supplement).
-claim by claim.
+to `output/results.json`; nothing is recomputed at figure time.
+`scripts/05_depth_distance_regression.py` re-fits the depth-distance gradient
+quoted in the manuscript, and `scripts/04_depth_sensitivity.py` computes the
+formal depth sensitivity of the recorded and proposed station geometries,
+writing `output/depth_sensitivity.json` and
+`output/table_s2_depth_sensitivity.csv` (Table S2 of the supplement).
+
 
 ## Requirements
 
